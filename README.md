@@ -1,0 +1,2 @@
+# eq-monitor-wrapper
+GoogleChromeの拡張機能「強振モニタ」から送られてくるリクエストを受ける用のWebAPI及びWebsocketのエンドポイント
