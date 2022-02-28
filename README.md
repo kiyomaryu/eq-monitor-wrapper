@@ -3,7 +3,7 @@
 ## Motivation
 
 VR中に地震があった時にすぐ気が付きたいよねー、というお話が発端です。  
-調べたところGoogleChromeの拡張機能の「[強振モニタ](https://chrome.google.com/webstore/detail/%E5%BC%B7%E9%9C%87%E3%83%A2%E3%83%8B%E3%82%BF-extension/ghkclpkmplddbagagffmmcmdbgjecbbj?hl=ja)」というものがありました。  
+調べたところGoogleChromeの拡張機能の「[強震モニタ](https://chrome.google.com/webstore/detail/%E5%BC%B7%E9%9C%87%E3%83%A2%E3%83%8B%E3%82%BF-extension/ghkclpkmplddbagagffmmcmdbgjecbbj?hl=ja)」というものがありました。  
 NeosVRでは外部通信としてWebsocketが利用することができます。  
 上記を中継するサーバがあれば実現できるということがわかり作ることにしました。
 
@@ -12,10 +12,10 @@ NeosVRでは外部通信としてWebsocketが利用することができます�
 緊急地震速報をWebsocketにて接続しているクライアントに通知するためのWrapperになります。
 このWebアプリでは下記の機能を提供しています。
 
-- 強振モニタからのPOSTリクエストを受け取るWebAPIのエンドポイント
+- 強震モニタからのPOSTリクエストを受け取るWebAPIのエンドポイント
 - 緊急地震速報をNeosVR内から受け取るためのWebsocketのエンドポイント
 
-強振モニタには外部WebAPIのエンドポイントに対して地震情報をJson形式でPOSTする機能があります。  
+強震モニタには外部WebAPIのエンドポイントに対して地震情報をJson形式でPOSTする機能があります。  
 この機能のエンドポイントとして実装を行いました。
 
 ## Infrastructure
@@ -65,7 +65,7 @@ NeosVRでは外部通信としてWebsocketが利用することができます�
 ### 緊急地震速報通知フロー
 
 - 1.緊急地震速報クライアントからWebsocketのエンドポイントに接続
-- 2.緊急地震速報が発報され強振モニタプラグインからWebAPIのエンドポイントにPOSTされる
+- 2.緊急地震速報が発報されモニタプラグインからWebAPIのエンドポイントにPOSTされる
 - 3.1でコネクションを張っている緊急地震速報クライアントに対してPOSTのタイミングでWebsocketのSendで送信(複数コネクションがあれば全てに対してSend)
 - 4.緊急地震速報クライアントで通知されたJsonを解析し該当の音声データにてワールド内にいるユーザに対して通知
 
