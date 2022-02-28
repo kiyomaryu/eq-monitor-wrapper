@@ -1,7 +1,5 @@
 # eq-monitor-wrapper
 
-![2022-02-27 14 50 34](https://user-images.githubusercontent.com/24783202/155921690-4b9c2c3a-099f-4894-ad26-e2551594772a.jpg)
-
 ## Motivation
 
 VR中に地震があった時にすぐ気が付きたいよねー、というお話が発端です。  
