@@ -3,7 +3,7 @@
 ## Motivation
 
 VR中に地震があった時にすぐ気が付きたいよねー、というお話が発端です。  
-調べたところGoogleChromeの拡張機能の「強振モニタ」というものがありました。  
+調べたところGoogleChromeの拡張機能の「[強振モニタ](https://chrome.google.com/webstore/detail/%E5%BC%B7%E9%9C%87%E3%83%A2%E3%83%8B%E3%82%BF-extension/ghkclpkmplddbagagffmmcmdbgjecbbj?hl=ja)」というものがありました。  
 NeosVRでは外部通信としてWebsocketが利用することができます。  
 上記を中継するサーバがあれば実現できるということがわかり作ることにしました。
 
