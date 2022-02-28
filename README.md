@@ -21,7 +21,8 @@ NeosVRでは外部通信としてWebsocketが利用することができます�
 ## Infrastructure
 
 ### 論理構成図
-![論理構成図](https://user-images.githubusercontent.com/24783202/155921480-b5e5f48b-fd2e-4107-b398-1fbd916dde79.png)
+
+![論理構成図](https://user-images.githubusercontent.com/24783202/155936839-551603ce-0def-4e33-9ac2-84c7d8bd0219.png)
 
 ### WebAPIエンドポイント
 // TODO
